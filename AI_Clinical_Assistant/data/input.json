@@ -1,0 +1,42 @@
+{
+  "conversation_id": "C100912",
+  "conversation": [
+    {
+      "speaker": "Doctor",
+      "text": "What symptoms do you have?"
+    },
+    {
+      "speaker": "Patient",
+      "text": "I have fever, headache, and body pain for three days."
+    },
+    {
+      "speaker": "Doctor",
+      "text": "Do you have any cough or breathing difficulty?"
+    },
+    {
+      "speaker": "Patient",
+      "text": "No doctor."
+    },
+    {
+      "speaker": "Doctor",
+      "text": "Are you taking any medications?"
+    },
+    {
+      "speaker": "Patient",
+      "text": "No."
+    }
+  ],
+  "clinical_entities": {
+    "symptoms": [
+      "fever",
+      "headache",
+      "body pain"
+    ],
+    "duration": "three days",
+    "severity": "moderate",
+    "body_part": null,
+    "medications": [],
+    "age": null,
+    "gender": null
+  }
+}

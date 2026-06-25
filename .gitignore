@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environments
+.venv/
+venv/
+diarization_env/
+
+# VS Code
+.vscode/
+
+# Python cache
+.pytest_cache/
+
+# Whisper Models
+models/whisper/
+
+# Audio
+recordings/temp/
+*.tmp
+
+# Generated Reports
+generated_reports/
+
+# Environment Variables
+.env
+
+# MongoDB
+*.lock
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
