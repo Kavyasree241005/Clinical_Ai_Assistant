@@ -1,16 +1,17 @@
 import sys
 from pathlib import Path
 from datetime import datetime
-from database.mongodb import patients
+
 ROOT_DIR = Path(__file__).resolve().parents[2]
 
 if str(ROOT_DIR) not in sys.path:
     sys.path.append(str(ROOT_DIR))
 
 # Clinical AI Project
-sys.path.append(
-    r"D:\Internship\clinical-ai"
-)
+AI_DIR = ROOT_DIR.parent / "clinical-ai"
+
+if str(AI_DIR) not in sys.path:
+    sys.path.append(str(AI_DIR))
 
 import streamlit as st
 
@@ -19,6 +20,7 @@ from main import (
 )
 
 from database.mongodb import (
+    patients,
     consultations,
     reports
 )
