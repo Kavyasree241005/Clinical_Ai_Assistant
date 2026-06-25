@@ -2,6 +2,8 @@ import os
 import json
 import tempfile
 from datetime import datetime
+import sys
+from pathlib import Path
 
 import soundfile as sf
 import numpy as np
@@ -16,11 +18,13 @@ from modules.preprocessor import (
 from modules.voice_id import VoiceIdentifier
 from modules.stt import ClinicalSTT
 from modules.nlp_extractor import extract_clinical_entities
-import sys
 
-sys.path.append(
-    r"D:\Internship\AI_Clinical_Assistant"
-)
+
+
+ROOT = Path(__file__).resolve().parent.parent
+
+if str(ROOT) not in sys.path:
+    sys.path.append(str(ROOT))
 
 from app.main import run_pipeline
 
