@@ -1,0 +1,26 @@
+streamlit
+pymongo
+dnspython
+python-dotenv
+
+fastapi
+uvicorn
+
+numpy
+pandas
+scikit-learn
+joblib
+
+spacy
+
+jinja2
+reportlab
+fpdf
+
+bcrypt
+passlib
+
+pillow
+requests
+
+pip install motor
