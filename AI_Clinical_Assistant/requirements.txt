@@ -1,5 +1,6 @@
 streamlit
 pymongo
+dnspython
 python-dotenv
 
 fastapi
